@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ site.name }}</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="group">
+        <h1 class="title">
+          <a href="/">
+            <span>Radminton</span>
+            Badminton Club
+          </a>
+        </h1>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-      <div class="site">
-        <div class="header">
-          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        </div>
-
-        {{ content }}
-
-        <div class="footer">
-        </div>
+        <p>
+          New Members
+          Always Welcome
+        </p>
       </div>
+    </header>
 
-    </body>
+    <main>
+      <div class="group">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer>
+      <div class="group">
+        <em>Let&#8217;s Play!</em>
+
+        <p>
+          Website designed and build by
+
+          <a href="http://www.liamjaydesigns.com">
+            Liam Jay
+          </a>
+
+          and
+
+          <a href="http://stevelacey.net">
+            Steve Lacey
+          </a>
+        </p>
+
+        <p>
+          &copy; {{ site.time | date: '%Y' }}. All rights reserved unless stated. Designed and build with copious amounts of coffee and biscuits.<br />
+          All images and content copyright {{ site.name }} unless otherwise stated.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      if (['radminton.github.io', 'www.radminton.co.uk'].indexOf(window.location.hostname) == -1) {
+        document.write('\x3Cscript src="http://livejs.com/live.js">\x3C/script>');
+      }
+    </script>
+  </body>
 </html>
