@@ -1,160 +1,120 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body { height: 100%; }
-
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+    background: #F9F6ED;
+    margin: 0;
+    font-family: helvetica, arial;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.posts li {
-  line-height: 1.75em;
+header {
+    background: #B91A16;
+    border-bottom: .5rem solid #9B1A15;
+    padding: 1rem 0;
+    color: #F9F6ED;
 }
 
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+header a {
+    color: #F9F6ED;
 }
 
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
+h1, h2, h3 {
+    margin: 0;
 }
 
-.header a {
-  font-weight: bold;
-  text-decoration: none;
+a {
+    color: #B91A16;
+    text-decoration: none;
 }
 
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
+iframe {
+    max-width: 100%;
 }
 
-.title a {
-  color: #a00;
+main {
+    padding: 2rem 0;
 }
 
-.title a:hover {
-  color: #000;
+.lead {
+    font-size: 2rem;
+    text-align: center;
 }
 
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
+.group {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.header a.extra:hover {
-  color: #000;
+@media (min-width: 800px) {
+    .group {
+        width: 80%;
+    }
 }
 
-.meta {
-  color: #aaa;
+.box {
+    background: white;
+    border-top: .125rem solid #E0DFC3;
+    margin: 1rem 0;
+    padding: 1.5rem;
 }
 
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
+@media (min-width: 800px) {
+    .section {
+        width: 48%;
+    }
+
+    .section--left {
+        float: left;
+    }
+
+    .section--right {
+        float: right;
+        clear: right;
+    }
 }
 
-.footer .contact {
-  float: left;
-  margin-right: 3em;
+.section h2 {
+    border-bottom: .075rem solid #9B1A15;
+    padding-bottom: .5rem;
 }
 
-.footer .contact a {
-  color: #8085C1;
+.section a {
+    color: #B91A16 !important; // force google map link
 }
 
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
+footer {
+    background: #2D2D2D;
+    padding: 4rem 0;
+    color: #F9F6ED;
+    text-align: center;
 }
 
-.footer .rss img {
-  border: 0;
+footer em {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: bold;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+footer a {
+    color: #F9F6ED;
+    text-decoration: underline;
 }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
+/* Clearfix group */
 
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
+/* For modern browsers */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
 }
-
-.post pre code {
-  border: none;
+.group:after {
+    clear:both;
 }
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
+/* For IE 6/7 (trigger hasLayout) */
+.group {
+    zoom:1;
 }
