@@ -34,9 +34,7 @@
     </header>
 
     <main>
-      <div class="group">
-        {{ content }}
-      </div>
+      {{ content }}
     </main>
 
     <footer>
@@ -44,22 +42,27 @@
         <em>Let&#8217;s Play!</em>
 
         <p>
-          Website designed and build by
+          Website designed and built by
 
           <a href="http://www.liamjaydesigns.com">
-            Liam Jay
+            <img src="http://www.gravatar.com/avatar/0cdf08ded232b88e5d532e3f0d995abe?s=32" alt="Liam" />
+            <span>Liam Jay</span>
           </a>
 
           and
 
           <a href="http://stevelacey.net">
-            Steve Lacey
+            <img src="http://www.gravatar.com/avatar/d31e3ba459fef7d0d5994291c3ef8b69?s=32" alt="Steve" />
+            <span>Steve Lacey</span>
           </a>
         </p>
 
         <p>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved unless stated. Designed and build with copious amounts of coffee and biscuits.<br />
+          &copy; {{ site.time | date: '%Y' }}. All rights reserved unless stated. Designed and build with copious amounts of coffee and biscuits.
+        </p>
+        <p>
           All images and content copyright {{ site.name }} unless otherwise stated.
+          Set in Freight Sans Pro and Open Sans.
         </p>
       </div>
     </footer>
