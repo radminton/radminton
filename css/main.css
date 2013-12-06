@@ -89,10 +89,6 @@ main {
     padding-bottom: .5rem;
 }
 
-.section a {
-    color: #B91A16 !important; // force google map link
-}
-
 .photos {
     margin: 2rem 0;
 }
