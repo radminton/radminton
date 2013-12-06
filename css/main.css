@@ -85,6 +85,40 @@ main {
     color: #B91A16 !important; // force google map link
 }
 
+.photos {
+    margin: 2rem 0;
+}
+
+.photos h2 {
+    margin-bottom: 1rem;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list--photos li {
+    display: inline-block;
+}
+
+.list--photos li a,
+.list--photos li a img {
+    display: block;
+}
+
+.list--photos li {
+    margin: 0 1rem 1rem 0;
+}
+
+.list--photos li a {
+    background: white;
+    border: .075rem solid #E0DFC3;
+    padding: .25rem;
+    box-shadow: 0 0 6px #E0DFC3;
+}
+
 footer {
     background: #2D2D2D;
     padding: 4rem 0;
