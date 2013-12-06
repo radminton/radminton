@@ -38,6 +38,10 @@ iframe {
     max-width: 100%;
 }
 
+p:last-child {
+    margin-bottom: 0;
+}
+
 main {
     padding: 2rem 0;
 }
