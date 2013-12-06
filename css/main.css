@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
 iframe {
     max-width: 100%;
 }
@@ -133,7 +137,42 @@ footer em {
 }
 
 footer a {
+    position: relative;
+    padding-left: 38px;
     color: #F9F6ED;
+}
+
+footer a img {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    margin-top: -16px;
+    border-radius: 16px;
+
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    filter: grayscale(50%);
+    filter: gray; /* IE 6-9 */
+}
+
+footer a:hover img,
+footer a:focus img {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    filter: none; /* IE 6-9 */
+}
+
+footer a span {
+    text-decoration: none;
+}
+
+footer a:hover span,
+footer a:focus span {
     text-decoration: underline;
 }
 
