@@ -15,9 +15,8 @@ var Radminton = {
         var node = nodes[i];
 
         var email = node.textContent = node.textContent
-          .replace(/[\s]?\[at\][\s]?/g, '@')
-          .replace(/[\s]?\[dot\][\s]?/g, '.')
-          .replace(/>[\s]+</g, '><')
+          .replace(/ \[at\] /g, '@')
+          .replace(/ \[dot\] /g, '.')
         ;
 
         var a = document.createElement('a');
