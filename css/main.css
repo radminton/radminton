@@ -1,7 +1,7 @@
 body {
     background: #F9F6ED;
     margin: 0;
-    font-family: helvetica, arial;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
 
 * {
@@ -23,6 +23,7 @@ header a {
 
 h1, h2, h3 {
     margin: 0;
+    font-family: "freight-sans-pro" Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 }
 
 a {
