@@ -34,7 +34,7 @@ body {
 /* Typography */
 h1, .h1, h2, .h2, h3, .h3 {
 	margin: 0;
-	font-family: "freight-sans-pro" Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+	font-family: "freight-sans-pro", "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", Helvetica, Arial, sans-serif;
 }
 
 h1, .h1 {
@@ -158,7 +158,7 @@ header {
 }
 
 .club-cta {
-	font-family: "freight-sans-pro" Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+	font-family: "freight-sans-pro", "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", Helvetica, Arial, sans-serif;
 	text-align: center;
 }
 
@@ -182,6 +182,38 @@ header {
 
 }
 
+/* Lead Box */
+.lead {
+	font-size: 25px;
+	font-size: 2.5rem;
+	font-weight: bold;
+	font-family: "freight-sans-pro", "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+
+	.lead {
+		font-size: 35px;
+		font-size: 3.5rem;
+	}
+
+}
+
+@media (min-width: 800px) {
+
+	.lead {
+		font-size: 40px;
+		font-size: 4rem;
+	}
+
+}
+
+.lead__shout {
+	color: #b61e1e;
+}
+
+
 /* Elements */
 iframe {
 	max-width: 100%;
@@ -189,13 +221,6 @@ iframe {
 
 main {
 	padding: 2rem 0;
-}
-
-.lead {
-	font-size: 45px;
-	font-size: 4.5rem;
-	font-weight: bold;
-	text-align: center;
 }
 
 .disabled,
