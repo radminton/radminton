@@ -213,7 +213,6 @@ header {
 	color: #b61e1e;
 }
 
-
 /* Elements */
 iframe {
 	max-width: 100%;
@@ -221,15 +220,6 @@ iframe {
 
 main {
 	padding: 2rem 0;
-}
-
-.disabled,
-.disabled:hover,
-.disabled:focus,
-.disabled:active,
-.disabled:visited {
-	color: #2f2f2f;
-	text-decoration: none;
 }
 
 .group {
@@ -279,7 +269,6 @@ main {
 	border-bottom: .075rem solid #9B1A15;
 	padding-bottom: .5rem;
 }
-
 
 /* Photos Section*/
 .photos {
