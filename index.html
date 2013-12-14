@@ -4,6 +4,8 @@ title: Radminton Badminton Club, Bristol
 ---
 
 <div class="group">
+  <img src="images/hero.jpg" class="hero photo" alt="Rich, Dunc, David &amp; Dave">
+
   <p class="lead box">
     <strong class="lead__shout">Thursday, 7-9pm</strong> at Brislington Enterprise College,&nbsp;Bristol
   </p>
@@ -91,31 +93,11 @@ title: Radminton Badminton Club, Bristol
     <h2>Club photos</h2>
 
     <ul class="list list--photos">
-      <li>
-        <a href="http://placekitten.com/g/600/400">
-          <img src="http://placekitten.com/g/180/180" width="180" height="180" alt="Photo">
-        </a>
-      </li>
-      <li>
-        <a href="http://placekitten.com/g/600/400">
-          <img src="http://placekitten.com/g/180/180" width="180" height="180" alt="Photo">
-        </a>
-      </li>
-      <li>
-        <a href="http://placekitten.com/g/600/400">
-          <img src="http://placekitten.com/g/180/180" width="180" height="180" alt="Photo">
-        </a>
-      </li>
-      <li>
-        <a href="http://placekitten.com/g/600/400">
-          <img src="http://placekitten.com/g/180/180" width="180" height="180" alt="Photo">
-        </a>
-      </li>
-      <li>
-        <a href="http://placekitten.com/g/600/400">
-          <img src="http://placekitten.com/g/180/180" width="180" height="180" alt="Photo">
-        </a>
-      </li>
+      {% for i in (1..5) %}
+        <li>
+          <img src="photos/{{ i }}.jpg" class="photo" alt="Club photo {{ i }}">
+        </li>
+      {% endfor %}
     </ul>
   </section>
 </div>
