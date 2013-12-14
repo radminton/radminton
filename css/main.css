@@ -34,11 +34,18 @@ body {
 	box-sizing: border-box;
 }
 
+a {
+	color: #B91A16;
+	text-decoration: none;
+}
 
-/* Typography */
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+}
+
 h1, .h1, h2, .h2, h3, .h3 {
-	margin: 0;
 	font-family: "freight-sans-pro", "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", Helvetica, Arial, sans-serif;
+	margin: 0;
 }
 
 h1, .h1 {
@@ -56,13 +63,16 @@ h3, .h3 {
 	font-size: 2.4rem;
 }
 
-a {
-	color: #B91A16;
-	text-decoration: none;
+iframe {
+	max-width: 100%;
 }
 
-a:hover, a:focus, a:active {
-	text-decoration: underline;
+img {
+	max-width: 100%;
+}
+
+main {
+	padding: 2.5em 0 3.5em;
 }
 
 address {
@@ -79,7 +89,7 @@ p:last-child {
 
 /* Header Section*/
 header {
-	background: #B91A16 url('/img/fab-bg.png') left top;
+	background: #B91A16 url('/images/fab-bg.png') left top;
 	border-bottom: 10px solid #9B1A15;
 	padding: .5em 0;
 	color: #F9F6ED;
@@ -103,17 +113,15 @@ header {
 	height: 158px;
 	margin: 0 auto;
 	display: block;
-	background: url('/img/radminton-logo.png') center top no-repeat;
+	background: url('/images/radminton-logo.png') center top no-repeat;
 }
 
 @media (min-width: 600px) {
-
 	.club-title:before {
 		margin: 0;
 		display: inline-block;
 		float: left;
 	}
-
 }
 
 .club-title__sub {
@@ -123,7 +131,6 @@ header {
 }
 
 @media (min-width: 600px) {
-
 	.club-title,
 	.club-title__sub {
 		text-align: left;
@@ -138,11 +145,9 @@ header {
 		font-size: 50px;
 		font-size: 5rem;
 	}
-
 }
 
 @media (min-width: 1100px) {
-
 	.club-title,
 	.club-title__sub {
 		text-align: left;
@@ -161,7 +166,6 @@ header {
 		font-size: 55px;
 		font-size: 5.5rem;
 	}
-
 }
 
 .club-cta {
@@ -170,14 +174,12 @@ header {
 }
 
 @media (min-width: 600px) {
-
 	.club-cta {
 		text-align: left;
 	}
-
 }
-@media (min-width: 1100px) {
 
+@media (min-width: 1100px) {
 	.club-cta {
 		font-size: 435px;
 		font-size: 3.5rem;
@@ -186,7 +188,6 @@ header {
 		margin-top: 0.95em;
 		line-height: 1.15;
 	}
-
 }
 
 /* Lead Box */
@@ -203,34 +204,21 @@ header {
 }
 
 @media (min-width: 600px) {
-
 	.lead {
 		font-size: 35px;
 		font-size: 3.5rem;
 	}
-
 }
 
 @media (min-width: 800px) {
-
 	.lead {
 		font-size: 40px;
 		font-size: 4rem;
 	}
-
 }
 
 .lead__shout {
 	color: #b61e1e;
-}
-
-/* Elements */
-iframe {
-	max-width: 100%;
-}
-
-main {
-	padding: 2.5em 0 3.5em;
 }
 
 .group {
@@ -239,18 +227,15 @@ main {
 }
 
 @media (min-width: 800px) {
-
 	.group {
 		width: 85%;
 	}
-
 }
-@media (min-width: 1172px) {
 
+@media (min-width: 1172px) {
 	.group {
 		max-width: 1152px;
 	}
-
 }
 
 .box {
@@ -261,7 +246,6 @@ main {
 }
 
 @media (min-width: 800px) {
-
 	.section {
 		width: 48%;
 	}
@@ -299,22 +283,26 @@ main {
 
 .list--photos li {
 	display: inline-block;
-}
-
-.list--photos li a,
-.list--photos li a img {
-	display: block;
-}
-
-.list--photos li {
 	margin: 0 1rem 1rem 0;
 }
 
-.list--photos li a {
+.list--photos .photo {
+	width: 130px;
+	height: 130px;
+}
+
+@media (min-width: 800px) {
+	.list--photos .photo {
+		width: 185px;
+		height: 185px;
+	}
+}
+
+.photo {
 	background: white;
-	border: .075rem solid #E0DFC3;
-	padding: .25rem;
-	box-shadow: 0 0 6px #E0DFC3;
+	border: .15rem solid #E0DFC3;
+	padding: .5rem;
+	box-shadow: 0 0 1rem #E0DFC3;
 }
 
 /* Footer Section */
