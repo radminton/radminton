@@ -359,6 +359,10 @@ footer a:focus span {
 	text-decoration: underline;
 }
 
+footer .author {
+	white-space: nowrap;
+}
+
 /* Clearfix group */
 
 /* For modern browsers */
