@@ -80,8 +80,8 @@ p:last-child {
 /* Header Section*/
 header {
 	background: #B91A16 url('/img/fab-bg.png') left top;
-	border-bottom: .5rem solid #9B1A15;
-	padding: 1rem 0;
+	border-bottom: 10px solid #9B1A15;
+	padding: .5em 0;
 	color: #F9F6ED;
 }
 
@@ -197,6 +197,10 @@ header {
 	font-family: "freight-sans-pro", "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", Helvetica, Arial, sans-serif;
 	text-align: center;
 }
+.lead.box {
+	margin-bottom: 1em;
+	padding: 0.3em 0.45em 0.53em;
+}
 
 @media (min-width: 600px) {
 
@@ -226,7 +230,7 @@ iframe {
 }
 
 main {
-	padding: 2rem 0;
+	padding: 2.5em 0 3.5em;
 }
 
 .group {
@@ -237,7 +241,7 @@ main {
 @media (min-width: 800px) {
 
 	.group {
-		width: 80%;
+		width: 85%;
 	}
 
 }
@@ -251,9 +255,9 @@ main {
 
 .box {
 	background: white;
-	border-top: .125rem solid #E0DFC3;
-	margin: 1rem 0;
-	padding: 1.5rem;
+	border-top: 2px solid #E0DFC3;
+	margin-bottom: 2em;
+	padding: 1.15em 1.45em 1.6em;
 }
 
 @media (min-width: 800px) {
@@ -264,6 +268,7 @@ main {
 
 	.section--left {
 		float: left;
+		clear: left;
 	}
 
 	.section--right {
@@ -273,17 +278,17 @@ main {
 }
 
 .section h2 {
-	border-bottom: .075rem solid #9B1A15;
-	padding-bottom: .5rem;
+	border-bottom: 1px solid #9B1A15;
+	margin-bottom: .75em;
 }
 
 /* Photos Section*/
 .photos {
-	margin: 2rem 0;
+	margin-bottom: 2em;
 }
 
 .photos h2 {
-	margin-bottom: 1rem;
+	margin-bottom: .5em;
 }
 
 .list {
