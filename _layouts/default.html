@@ -9,6 +9,8 @@
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
+    <meta name="msapplication-TileColor" content="#b81916">
+    <meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="dns-prefetch" href="//use.typekit.net">
@@ -16,6 +18,14 @@
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700">
     <link rel="stylesheet" href="/css/main.css">
+
+    {% for size in site.apple-touch-icon-sizes %}
+      <link rel="apple-touch-icon" href="/images/apple-touch-icon-{{ size }}.png" sizes="{{ size }}">
+    {% endfor %}
+
+    {% for size in site.favicon-sizes %}
+      <link rel="icon" href="/images/favicon-{{ size }}.png" type="image/png" sizes="{{ size }}">
+    {% endfor %}
 
     <script src="/js/html5shiv.min.js"></script>
     <script src="/js/fonts.js"></script>

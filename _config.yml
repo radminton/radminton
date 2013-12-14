@@ -1,3 +1,6 @@
 name: Radminton Badminton Club
 markdown: redcarpet
 pygments: true
+
+favicon-sizes: [160x160, 96x96, 32x32, 16x16]
+apple-touch-icon-sizes: [57x57, 114x114, 72x72, 144x144, 60x60, 120x120, 76x76, 152x152]
