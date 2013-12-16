@@ -55,7 +55,7 @@ a:hover, a:focus, a:active {
 	text-decoration: underline;
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
+h1, .h1, h2, .h2, h3, .h3, .headings {
 	font-family: "freight-sans-pro", "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", Helvetica, Arial, sans-serif;
 	margin: 0;
 }
@@ -181,7 +181,6 @@ header {
 }
 
 .club-cta {
-	font-family: "freight-sans-pro", "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", Helvetica, Arial, sans-serif;
 	text-align: center;
 }
 
@@ -207,7 +206,6 @@ header {
 	font-size: 25px;
 	font-size: 2.5rem;
 	font-weight: bold;
-	font-family: "freight-sans-pro", "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", Helvetica, Arial, sans-serif;
 	text-align: center;
 }
 
@@ -279,6 +277,18 @@ header {
 	margin-bottom: .75em;
 }
 
+/* Alignment */
+.aligncenter {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Spacing */
+.space {
+	margin-bottom: 1.25em;
+}
+
 /* Photos Section*/
 .photos {
 	margin-bottom: 2em;
@@ -326,8 +336,9 @@ footer {
 	text-align: center;
 }
 
-footer em {
-	font-size: 4rem;
+.shout {
+	font-size: 80px;
+	font-size: 8rem;
 	font-style: normal;
 	font-weight: bold;
 }
