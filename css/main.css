@@ -17,9 +17,9 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
 }
 
 body {
-	background-color: #F9F6ED;
+	background-color: #f9f6ed;
 	color: #2f2f2f;
-	font-family: 'Open Sans', helvetica, arial, sans-serif;
+	font-family: "Open Sans", helvetica, arial, sans-serif;
 	font-size: 19px;
 	font-size: 1.9rem;
 	line-height: 1.6;
@@ -34,8 +34,20 @@ body {
 	box-sizing: border-box;
 }
 
+::selection {
+	background: #b91a16;
+	color: #f9f6ed;
+	text-shadow: 2px 2px 1em rgba(92, 5, 13, .5);
+}
+
+::-moz-selection {
+	background: #b91a16;
+	color: #f9f6ed;
+	text-shadow: 2px 2px 1em rgba(92, 5, 13, .5);
+}
+
 a {
-	color: #B91A16;
+	color: #b91a16;
 	text-decoration: none;
 }
 
@@ -89,10 +101,10 @@ p:last-child {
 
 /* Header Section*/
 header {
-	background: #B91A16 url('/images/fab-bg.png') left top;
-	border-bottom: 10px solid #9B1A15;
+	background: #b91a16 url("/images/fab-bg.png") left top;
+	border-bottom: 10px solid #9b1a15;
 	padding: .5em 0;
-	color: #F9F6ED;
+	color: #f9f6ed;
 }
 
 .club-title,
@@ -113,7 +125,7 @@ header {
 	height: 158px;
 	margin: 0 auto;
 	display: block;
-	background: url('/images/radminton-logo.png') center top no-repeat;
+	background: url("/images/radminton-logo.png") center top no-repeat;
 }
 
 @media (min-width: 600px) {
@@ -198,6 +210,7 @@ header {
 	font-family: "freight-sans-pro", "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", Helvetica, Arial, sans-serif;
 	text-align: center;
 }
+
 .lead.box {
 	margin-bottom: 1em;
 	padding: 0.3em 0.45em 0.53em;
@@ -240,7 +253,7 @@ header {
 
 .box {
 	background: white;
-	border-top: 2px solid #E0DFC3;
+	border-top: 2px solid #e0dfc3;
 	margin-bottom: 2em;
 	padding: 1.15em 1.45em 1.6em;
 }
@@ -262,7 +275,7 @@ header {
 }
 
 .section h2 {
-	border-bottom: 1px solid #9B1A15;
+	border-bottom: 1px solid #9b1a15;
 	margin-bottom: .75em;
 }
 
@@ -300,16 +313,16 @@ header {
 
 .photo {
 	background: white;
-	border: .15rem solid #E0DFC3;
+	border: .15rem solid #e0dfc3;
 	padding: .5rem;
-	box-shadow: 0 0 1rem #E0DFC3;
+	box-shadow: 0 0 1rem #e0dfc3;
 }
 
 /* Footer Section */
 footer {
-	background: #2D2D2D;
+	background: #2d2d2d;
 	padding: 4rem 0;
-	color: #F9F6ED;
+	color: #f9f6ed;
 	text-align: center;
 }
 
@@ -322,7 +335,7 @@ footer em {
 footer a {
 	position: relative;
 	padding-left: 38px;
-	color: #F9F6ED;
+	color: #f9f6ed;
 }
 
 footer a img {
@@ -368,15 +381,15 @@ footer .author {
 /* For modern browsers */
 .group:before,
 .group:after {
-	content:"";
-	display:table;
+	content: "";
+	display: table;
 }
 
 .group:after {
-	clear:both;
+	clear: both;
 }
 
 /* For IE 6/7 (trigger hasLayout) */
 .group {
-	zoom:1;
+	zoom: 1;
 }
