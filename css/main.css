@@ -8,8 +8,9 @@ html {
 body {
 	background-color: #f9f6ed;
 	color: #2f2f2f;
-	font-family: open sans, helvetica, arial, sans-serif;
-	font-size: 1.6em;
+	font-family: "open sans", helvetica, arial, sans-serif;
+	font-size: 17px;
+	font-size: 1.7rem;
 	line-height: 1.6;
 	margin: 0;
 	padding: 0;
@@ -46,9 +47,10 @@ a:hover, a:focus, a:active {
 	text-decoration: underline;
 }
 
-h1, .h1, h2, .h2, h3, .h3, .headings {
-	font-family: freight-sans-pro, open sans, helvetica, arial, sans-serif;
+h1, .h1, h2, .h2, h3, .h3, .heading {
+	font-family: "freight-sans-pro", "open sans", helvetica, arial, sans-serif;
 	margin: 0;
+	display: block;
 }
 
 h1, .h1 {
@@ -91,7 +93,7 @@ p:last-child {
 header {
 	background: #b91a16 url("/images/fab-bg.png") left top;
 	border-bottom: 10px solid #9b1a15;
-	padding: .5em 0;
+	padding: .35em 0;
 	color: #f9f6ed;
 	text-align: center;
 }
@@ -300,19 +302,32 @@ footer {
 	text-align: center;
 }
 
-.shout {
+.holla { /* Note that I need to reduce the font-size of this on mobiles */
 	font-size: 4em;
 	font-style: normal;
 	font-weight: bold;
 }
 
-footer a {
+address {
+	font-size: 16px;
+	font-size: 1.6rem;
+	text-align: center;
+	margin-bottom: 2.5em;
+}
+
+.author {
 	position: relative;
 	padding-left: 38px;
 	color: #f9f6ed;
 }
 
-footer a img {
+.author:hover,
+.author:focus,
+.author:active {
+	text-decoration: none;
+}
+
+.author__icon {
 	position: absolute;
 	top: 50%;
 	left: 2px;
@@ -327,8 +342,9 @@ footer a img {
 	filter: gray; /* IE 6-9 */
 }
 
-footer a:hover img,
-footer a:focus img {
+.author:hover .author__icon,
+.author:focus .author__icon,
+.author:active .author__icon {
 	-webkit-filter: none;
 	-moz-filter: none;
 	-ms-filter: none;
@@ -337,22 +353,21 @@ footer a:focus img {
 	filter: none; /* IE 6-9 */
 }
 
-footer a span {
-	text-decoration: none;
-}
-
-footer a:hover span,
-footer a:focus span {
-	text-decoration: underline;
-}
-
-footer small {
-	display: block;
-	font-size: .8em;
-}
-
-footer .author {
+.author__name {
 	white-space: nowrap;
+	padding-bottom: 0.15em;
+	border-bottom: 1px solid #f9f6ed;
+}
+
+.author:hover .author__name,
+.author:focus .author__name {
+	border-bottom-color: #a35454;
+}
+
+.fine-print {
+	font-size: 14px;
+	font-size: 1.4rem;
+	display: block;
 }
 
 /* Clearfix group */
