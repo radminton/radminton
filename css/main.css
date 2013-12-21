@@ -1,31 +1,23 @@
 html {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 57.5%;
-	vertical-align: baseline;
-	background: transparent;
-}
-
-.wf-freightsanspro-n7-active {
 	font-size: 62.5%;
-}
-
-article, aside, figure, footer, header, hgroup, nav, section, main {
-	display: block;
+	vertical-align: baseline;
 }
 
 body {
 	background-color: #f9f6ed;
 	color: #2f2f2f;
-	font-family: "Open Sans", helvetica, arial, sans-serif;
-	font-size: 19px;
-	font-size: 1.9rem;
+	font-family: "open sans", helvetica, arial, sans-serif;
+	font-size: 17px;
+	font-size: 1.7rem;
 	line-height: 1.6;
 	margin: 0;
 	padding: 0;
-	width : 100%;
+}
+
+article, aside, figure, footer, header, nav, section, main {
+	display: block;
 }
 
 * {
@@ -55,24 +47,22 @@ a:hover, a:focus, a:active {
 	text-decoration: underline;
 }
 
-h1, .h1, h2, .h2, h3, .h3, .headings {
-	font-family: "freight-sans-pro", "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", Helvetica, Arial, sans-serif;
+h1, .h1, h2, .h2, h3, .h3, .heading {
+	font-family: "freight-sans-pro", "open sans", helvetica, arial, sans-serif;
 	margin: 0;
+	display: block;
 }
 
 h1, .h1 {
-	font-size: 80px;
-	font-size: 8rem;
+	font-size: 4em;
 }
 
 h2, .h2 {
-	font-size: 35px;
-	font-size: 3.5rem;
+	font-size: 1.5em;
 }
 
 h3, .h3 {
-	font-size: 24px;
-	font-size: 2.4rem;
+	font-size: 1.25em;
 }
 
 iframe {
@@ -84,7 +74,7 @@ img {
 }
 
 main {
-	padding: 2.5em 0 3.5em;
+	padding: 2em 0;
 }
 
 address {
@@ -99,106 +89,106 @@ p:last-child {
 	margin-bottom: 0;
 }
 
-/* Header Section*/
+/* Header Section */
 header {
 	background: #b91a16 url("/images/fab-bg.png") left top;
 	border-bottom: 10px solid #9b1a15;
-	padding: .5em 0;
+	padding: .35em 0;
 	color: #f9f6ed;
-}
-
-.club-title,
-.club-title__sub {
 	text-align: center;
 }
 
-.club-title {
-	font-size: 40px;
-	font-size: 4rem;
-	line-height: 1;
-	margin-bottom: .25em;
+@media (min-width: 600px) {
+	header {
+		text-align: left;
+	}
+
+	header .group {
+		min-height: 148px;
+		padding-left: 180px;
+	}
 }
 
-.club-title:before {
-	content:"";
-	width: 179px;
-	height: 158px;
-	margin: 0 auto;
-	display: block;
-	background: url("/images/radminton-logo.png") center top no-repeat;
+.club-logo {
+	width: 168px;
+	height: 148px;
 }
 
 @media (min-width: 600px) {
-	.club-title:before {
-		margin: 0;
-		display: inline-block;
-		float: left;
+	.club-logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.club-title {
+	margin-bottom: .25em;
+	font-size: 40px;
+	font-size: 4rem;
+	line-height: 1;
+}
+
+@media (min-width: 600px) {
+	.club-title {
+		font-size: 60px;
+		font-size: 6rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.club-title {
+		/*font-size: 4em;*/
+		position: absolute;
+		top: 50%;
+		left: 180px;
+		height: 1.75em;
+		margin: -.875em 0 0;
 	}
 }
 
 .club-title__sub {
-	font-size: 27px;
-	font-size: 2.7rem;
 	display: block;
+	font-size: .675em;
 }
 
 @media (min-width: 600px) {
-	.club-title,
 	.club-title__sub {
-		text-align: left;
+		font-size: 40px;
+		font-size: 4rem;
 	}
-
-	.club-title {
-		font-size: 70px;
-		font-size: 7rem;
-	}
-
+}
+@media (min-width: 1024px) {
 	.club-title__sub {
 		font-size: 50px;
 		font-size: 5rem;
 	}
 }
 
-@media (min-width: 1100px) {
-	.club-title,
-	.club-title__sub {
-		text-align: left;
-	}
-
-	.club-title {
-		font-size: 80px;
-		font-size: 8rem;
-		display: inline-block;
-		float: left;
-		min-width: 585px;
-		margin-bottom: 0;
-	}
-
-	.club-title__sub {
-		font-size: 55px;
-		font-size: 5.5rem;
-	}
-}
-
-.club-cta {
-	text-align: center;
-}
-
 @media (min-width: 600px) {
 	.club-cta {
-		text-align: left;
+		font-size: 20px;
+		font-size: 2rem;
+		line-height: 1.15;
 	}
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
 	.club-cta {
-		font-size: 435px;
-		font-size: 3.5rem;
-		float: right;
-		max-width: 275px;
-		margin-top: 0.95em;
-		line-height: 1.15;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		max-width: 8.5em;
+		height: 2.25em;
+		margin-top: -1.25em;
+		font-size: 1.5em;
+		line-height: 1.25;
 	}
+}
+
+/* Hero */
+.hero {
+	margin-bottom: 1em;
 }
 
 /* Lead Box */
@@ -206,46 +196,43 @@ header {
 	font-size: 25px;
 	font-size: 2.5rem;
 	font-weight: bold;
+	line-height: 1.4;
 	text-align: center;
-}
-
-.lead.box {
-	margin-bottom: 1em;
-	padding: 0.3em 0.45em 0.53em;
 }
 
 @media (min-width: 600px) {
 	.lead {
-		font-size: 35px;
-		font-size: 3.5rem;
+		font-size: 30px;
+		font-size: 3rem;
+	}
+}
+@media (min-width: 1140px) {
+	.lead {
+		font-size: 34px;
+		font-size: 3.4rem;
 	}
 }
 
-@media (min-width: 800px) {
-	.lead {
-		font-size: 40px;
-		font-size: 4rem;
-	}
+.lead.box {
+	margin-bottom: .75em;
+	padding: .3em .5em .45em;
 }
+
 
 .lead__shout {
 	color: #b61e1e;
 }
 
 .group {
+	position: relative;
 	width: 90%;
+	max-width: 1152px;
 	margin: 0 auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
 	.group {
-		width: 85%;
-	}
-}
-
-@media (min-width: 1172px) {
-	.group {
-		max-width: 1152px;
+		width: 80%;
 	}
 }
 
@@ -306,7 +293,7 @@ header {
 
 .list--photos li {
 	display: inline-block;
-	margin: 0 1rem 1rem 0;
+	margin: 0 1em 1em 0;
 }
 
 .list--photos .photo {
@@ -323,33 +310,45 @@ header {
 
 .photo {
 	background: white;
-	border: .15rem solid #e0dfc3;
-	padding: .5rem;
-	box-shadow: 0 0 1rem #e0dfc3;
+	border: .15em solid #e0dfc3;
+	padding: .5em;
+	box-shadow: 0 0 1em #e0dfc3;
 }
 
 /* Footer Section */
 footer {
 	background: #2d2d2d;
-	padding: 4rem 0;
+	padding: 4em 0;
 	color: #f9f6ed;
 	text-align: center;
 }
 
-.shout {
-	font-size: 80px;
-	font-size: 8rem;
+.holla { /* Note that I need to reduce the font-size of this on mobiles */
+	font-size: 4em;
 	font-style: normal;
 	font-weight: bold;
 }
 
-footer a {
+address {
+	font-size: 16px;
+	font-size: 1.6rem;
+	text-align: center;
+	margin-bottom: 2.5em;
+}
+
+.author {
 	position: relative;
 	padding-left: 38px;
 	color: #f9f6ed;
 }
 
-footer a img {
+.author:hover,
+.author:focus,
+.author:active {
+	text-decoration: none;
+}
+
+.author__icon {
 	position: absolute;
 	top: 50%;
 	left: 2px;
@@ -364,8 +363,9 @@ footer a img {
 	filter: gray; /* IE 6-9 */
 }
 
-footer a:hover img,
-footer a:focus img {
+.author:hover .author__icon,
+.author:focus .author__icon,
+.author:active .author__icon {
 	-webkit-filter: none;
 	-moz-filter: none;
 	-ms-filter: none;
@@ -374,17 +374,21 @@ footer a:focus img {
 	filter: none; /* IE 6-9 */
 }
 
-footer a span {
-	text-decoration: none;
-}
-
-footer a:hover span,
-footer a:focus span {
-	text-decoration: underline;
-}
-
-footer .author {
+.author__name {
 	white-space: nowrap;
+	padding-bottom: 0.15em;
+	border-bottom: 1px solid #f9f6ed;
+}
+
+.author:hover .author__name,
+.author:focus .author__name {
+	border-bottom-color: #a35454;
+}
+
+.fine-print {
+	font-size: 14px;
+	font-size: 1.4rem;
+	display: block;
 }
 
 /* Clearfix group */
@@ -392,8 +396,8 @@ footer .author {
 /* For modern browsers */
 .group:before,
 .group:after {
-	content: "";
 	display: table;
+	content: "";
 }
 
 .group:after {
