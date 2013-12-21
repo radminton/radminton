@@ -293,6 +293,10 @@ header {
 	display: inline-block;
 	margin: 0 1em 1em 0;
 }
+.ie8 .list--photos li {
+	float: left;
+	width: 185px;
+}
 
 @media (max-width: 479px) {
 	.list--photos li:nth-child(even) {
@@ -417,6 +421,15 @@ address {
 	font-size: 14px;
 	font-size: 1.4rem;
 	display: block;
+}
+
+/* Compatibilty Warning */
+.compatibility-warning {
+	font-weight: bold;
+	text-align: center;
+	padding: 1em;
+	background-color: #79c5e9;
+	border: 3px solid #306e9e;
 }
 
 /* Clearfix group */
