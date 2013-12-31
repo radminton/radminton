@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--[if lte IE 8]> <html class="ie ie8 lte9 lte8 lte7"> <![endif]-->
+<!--[if lte IE 8]> <html class="ie ie8 lt9 lte8 lte7"> <![endif]-->
 <!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
 <!--[if gt IE 9]>  <html> <![endif]-->
 <!--[if !IE]><!--> <html> <!--<![endif]-->
@@ -31,8 +31,10 @@
     {% endfor %}
 
     <script src="/js/html5shiv.min.js"></script>
-    <script src="/js/respond.min.js"></script>
     <script src="/js/fonts.js"></script>
+    <!--[if lte IE 8]>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <header>

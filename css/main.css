@@ -293,7 +293,8 @@ header {
 	display: inline-block;
 	margin: 0 1em 1em 0;
 }
-.ie8 .list--photos li {
+
+.lte8 .list--photos li {
 	float: left;
 	width: 185px;
 }
