@@ -138,7 +138,6 @@ header {
 
 @media (min-width: 1024px) {
 	.club-title {
-		/*font-size: 4em;*/
 		position: absolute;
 		top: 50%;
 		left: 180px;
@@ -188,7 +187,7 @@ header {
 
 /* Hero */
 .hero {
-	margin-bottom: 1em;
+	margin-bottom: 1.25em;
 }
 
 /* Lead Box */
@@ -214,10 +213,9 @@ header {
 }
 
 .lead.box {
-	margin-bottom: .75em;
+	margin-bottom: .9em;
 	padding: .3em .5em .45em;
 }
-
 
 .lead__shout {
 	color: #b61e1e;
@@ -296,6 +294,28 @@ header {
 	margin: 0 1em 1em 0;
 }
 
+.lte8 .list--photos li {
+	float: left;
+	width: 185px;
+}
+
+@media (max-width: 479px) {
+	.list--photos li:nth-child(even) {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 726px) {
+	.list--photos li:nth-child(3n+3) {
+		margin-right: 0;
+	}
+}
+@media (min-width: 1260px) {
+	.list--photos li:nth-child(5n+5) {
+		margin-right: 0;
+	}
+}
+
 .list--photos .photo {
 	width: 130px;
 	height: 130px;
@@ -310,23 +330,36 @@ header {
 
 .photo {
 	background: white;
-	border: .15em solid #e0dfc3;
-	padding: .5em;
+	border: .075em solid #e0dfc3;
+	padding: .25em;
 	box-shadow: 0 0 1em #e0dfc3;
+}
+@media (min-width: 600px) {
+	.photo {
+		padding: .5em;
+	}
 }
 
 /* Footer Section */
 footer {
-	background: #2d2d2d;
+	background: #2d2d2d url("/images/dark-fab-bg.png") left top;
 	padding: 4em 0;
 	color: #f9f6ed;
 	text-align: center;
 }
 
-.holla { /* Note that I need to reduce the font-size of this on mobiles */
-	font-size: 4em;
+.holla {
+	font-size: 58px;
+	font-size: 5.8rem;
 	font-style: normal;
 	font-weight: bold;
+}
+
+@media (min-width: 600px) {
+	.holla {
+		font-size: 75px;
+		font-size: 7.5rem;
+	}
 }
 
 address {
@@ -389,6 +422,15 @@ address {
 	font-size: 14px;
 	font-size: 1.4rem;
 	display: block;
+}
+
+/* Compatibilty Warning */
+.compatibility-warning {
+	font-weight: bold;
+	text-align: center;
+	padding: 1em;
+	background-color: #79c5e9;
+	border: 3px solid #306e9e;
 }
 
 /* Clearfix group */
