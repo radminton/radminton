@@ -426,11 +426,16 @@ address {
 
 /* Compatibilty Warning */
 .compatibility-warning {
-	font-weight: bold;
-	text-align: center;
-	padding: 1em;
+	display: none;
 	background-color: #79c5e9;
 	border: 3px solid #306e9e;
+	padding: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.lte7 .compatibility-warning {
+	display: block;
 }
 
 /* Clearfix group */
