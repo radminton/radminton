@@ -7,7 +7,17 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
 
-    <meta name="description" content="{{ page.title }} is a friendly social badminton club who play every Thursday, 7-9pm at Brislington Enterprise College, Bristol"/>
+    <meta name="title" content="{{ page.title }}">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="author" content="{{ site.author | escape }}">
+    <meta name="language" content="en">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.baseurl }}/images/logo-red-200x200.png">
+    <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="cleartype" content="on">
@@ -17,6 +27,8 @@
     <meta name="msapplication-TileColor" content="#b81916">
     <meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
 
     <link rel="dns-prefetch" href="//use.typekit.net">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -34,9 +46,11 @@
 
     <script src="/js/html5shiv.min.js"></script>
     <script src="/js/fonts.js"></script>
+
     <!--[if lte IE 8]>
       <script src="/js/respond.min.js"></script>
     <![endif]-->
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -49,7 +63,7 @@
   <body>
     <header>
       <div class="group">
-        <img src="/images/radminton-logo.png" class="club-logo" alt="Radminton">
+        <img src="/images/logo.png" class="club-logo" alt="Radminton">
 
         <h1 class="club-title">
           Radminton
