@@ -348,6 +348,16 @@ footer {
 	text-align: center;
 }
 
+footer a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+footer a:hover,
+footer a:focus {
+	text-decoration: none;
+}
+
 .holla {
 	font-size: 58px;
 	font-size: 5.8rem;
@@ -372,7 +382,6 @@ address {
 .author {
 	position: relative;
 	padding-left: 38px;
-	color: #f9f6ed;
 }
 
 .author:hover,
@@ -403,25 +412,29 @@ address {
 	-moz-filter: none;
 	-ms-filter: none;
 	-o-filter: none;
-	filter: none;
 	filter: none; /* IE 6-9 */
 }
 
 .author__name {
 	white-space: nowrap;
-	padding-bottom: 0.15em;
-	border-bottom: 1px solid #f9f6ed;
-}
-
-.author:hover .author__name,
-.author:focus .author__name {
-	border-bottom-color: #a35454;
 }
 
 .fine-print {
+	display: block;
 	font-size: 14px;
 	font-size: 1.4rem;
-	display: block;
+	color: rgba(249, 246, 237, .5);
+}
+
+.fine-print {
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
+}
+
+.fine-print:hover {
+	color: rgba(249, 246, 237, 1);
 }
 
 /* Compatibilty Warning */
