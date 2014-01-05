@@ -473,6 +473,14 @@ address {
 	}
 }
 
+.page-not-found > * {
+	-webkit-filter: hue-rotate(-220deg) saturate(200%) brightness(83.33%);
+	-moz-filter: hue-rotate(-220deg) saturate(200%) brightness(83.33%);
+	-ms-filter: hue-rotate(-220deg) saturate(200%) brightness(83.33%);
+	-o-filter: hue-rotate(-220deg) saturate(200%) brightness(83.33%);
+	filter: hue-rotate(-220deg) saturate(200%) brightness(83.33%);
+}
+
 /* Clearfix group */
 
 /* For modern browsers */
