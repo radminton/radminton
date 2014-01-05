@@ -3,6 +3,7 @@ description: Radminton is a friendly social badminton club who play every Thursd
 keywords: radminton, badminton, club, brislington, bristol
 author: Liam Jay & Steve Lacey
 markdown: redcarpet
+permalink: pretty
 pygments: true
 
 favicon-sizes: [160x160, 96x96, 32x32, 16x16]
