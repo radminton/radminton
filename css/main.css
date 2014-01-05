@@ -433,6 +433,46 @@ address {
 	border: 3px solid #306e9e;
 }
 
+/* 404 */
+.page-not-found {
+	background-image: url('/images/page-not-found.gif');
+	background-size: 110% auto;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-color: #99CCCC;
+	border-color: #77BCBC;
+	padding-bottom: 200px;
+	-webkit-filter: hue-rotate(220deg) saturate(50%) brightness(120%);
+	-moz-filter: hue-rotate(220deg) saturate(50%) brightness(120%);
+	-ms-filter: hue-rotate(220deg) saturate(50%) brightness(120%);
+	-o-filter: hue-rotate(220deg) saturate(50%) brightness(120%);
+	filter: hue-rotate(220deg) saturate(50%) brightness(120%);
+}
+
+@media (min-width: 400px) {
+	.page-not-found {
+		padding-bottom: 300px;
+	}
+}
+
+@media (min-width: 600px) {
+	.page-not-found {
+		padding-bottom: 400px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.page-not-found {
+		padding-bottom: 500px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.page-not-found {
+		padding-bottom: 600px;
+	}
+}
+
 /* Clearfix group */
 
 /* For modern browsers */
