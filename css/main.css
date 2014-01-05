@@ -394,6 +394,8 @@ address {
 	position: absolute;
 	top: 50%;
 	left: 2px;
+	width: 32px;
+	height: 32px;
 	margin-top: -16px;
 	border-radius: 16px;
 
